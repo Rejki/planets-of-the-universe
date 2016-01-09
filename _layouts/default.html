@@ -1,25 +1,26 @@
 <!doctype html>
 <html>
 <head>
-    <title>Planest of the Universe</title>
+  <title>Planest of the Universe</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
 </head>
 
 <body>
     
   <header>
     <h1>Planets of the Universe</h1>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/news.html">News</a></li>
-      </ul>
-    </nav>
+    {% include nav.html %}
   </header>
+  
+  <footer>
+    &copy; Rejhan Ymeri - 2016
+    {% include nav.html %}
+  </footer>
     
   {{content}}
 
